@@ -1,0 +1,24 @@
+.experience-card-container {
+    position: relative;
+    height: 400px; /* Set the height you want for the card container */
+    overflow-x: scroll; /* Enable horizontal scrolling */
+    white-space: nowrap;
+  }
+  
+  .experience-card {
+    position: absolute;
+    width: 300px;
+    height: 100%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .experience-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  

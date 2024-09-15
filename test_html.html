@@ -1,0 +1,49 @@
+<html>
+<head>
+    <title>Profile Website</title>
+    <link rel="stylesheet" href="test_styles.css">
+</head>
+<body>
+    <div class="experience-card-container">
+        <div class="experience-card" data-index="1">
+          <h3 class="experience-title">Job Title 1</h3>
+          <p class="experience-description">Description of job experience 1.</p>
+        </div>
+      
+        <div class="experience-card" data-index="2">
+          <h3 class="experience-title">Job Title 2</h3>
+          <p class="experience-description">Description of job experience 2.</p>
+        </div>
+      
+        <div class="experience-card" data-index="3">
+          <h3 class="experience-title">Job Title 3</h3>
+          <p class="experience-description">Description of job experience 3.</p>
+        </div>
+      
+        <!-- Add more experience cards here -->
+    </div>
+      
+    <script>
+        const cards = document.querySelectorAll('.experience-card-container .experience-card');
+      
+        document.querySelector('.experience-card-container').addEventListener('scroll', () => {
+          const container = event.target;
+          const scrollLeft = container.scrollLeft;
+          const cardWidth = 300; // Width of each card
+      
+          cards.forEach((card, index) => {
+            const cardLeft = index * cardWidth;
+            const distanceFromScroll = cardLeft - scrollLeft;
+      
+            if (distanceFromScroll <= 0) {
+              card.style.zIndex = index + 1;
+              card.style.transform = `translateX(${distanceFromScroll}px)`;
+            } else {
+              card.style.zIndex = index;
+              card.style.transform = `translateX(0)`;
+            }
+          });
+        });
+      </script>
+      
+</body>

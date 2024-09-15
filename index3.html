@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple Sticky Headings</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        .scrollable-div {
+            width: 100%;
+            height: 100vh;
+            overflow-y: auto;
+            position: relative;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .image-container {
+            width: 100%;
+            transition: opacity 0.5s ease; /* Smooth transition for disappearance */
+        }
+
+        .image-container img {
+            width: 100%;
+        }
+
+        .text-content {
+            margin-top: 20px;
+        }
+
+        /* Sticky heading styling */
+        .sticky-heading {
+            font-size: 24px;
+            background-color: white; /* Ensure heading is visible */
+            position: -webkit-sticky; /* For Safari support */
+            position: sticky;
+            top: 0; /* Sticks to the top */
+            z-index: 2; /* Ensures it stays above other content */
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        /* When the image is hidden, apply this class */
+        .hidden {
+            opacity: 0;
+        }
+
+        /* Spacer for content to scroll */
+        .spacer {
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="scrollable-div" id="scrollableDiv">
+        <h1>B Yaswanth Sandeep</h1>
+
+        <div class="image-container" id="imageContainer">
+            <img src="./profile_image.jpg" alt="Profile Image" id="image">
+        </div>
+
+        <!-- Sticky heading 1 -->
+        <h1 class="sticky-heading" id="stickyHeading1">Sticky Heading 1</h1>
+
+        <div class="text-content">
+            <p>Paragraph 1: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi.</p>
+            <p>
+                Vestibulum vitae velit vitae metus efficitur luctus. Sed vitae justo nec eros tempor hendrerit.
+                Phasellus non quam a ligula iaculis tempus. Etiam euismod justo sit amet magna posuere, id luctus erat.
+                Phasellus non quam a ligula iaculis tempus. Etiam euismod justo sit amet magna posuere, id luctus erat.
+                Phasellus non quam a ligula iaculis tempus. Etiam euismod justo sit amet magna posuere, id luctus erat.
+                Phasellus non quam a ligula iaculis tempus. Etiam euismod justo sit amet magna posuere, id luctus erat.
+                Phasellus non quam a ligula iaculis tempus. Etiam euismod justo sit amet magna posuere, id luctus erat.
+                Phasellus non quam a ligula iaculis tempus. Etiam euismod justo sit amet magna posuere, id luctus erat.
+                Phasellus non quam a ligula iaculis tempus. Etiam euismod justo sit amet magna posuere, id luctus erat.
+                Phasellus non quam a ligula iaculis tempus. Etiam euismod justo sit amet magna posuere, id luctus erat.
+                Phasellus non quam a ligula iaculis tempus. Etiam euismod justo sit amet magna posuere, id luctus erat.
+                Phasellus non quam a ligula iaculis tempus. Etiam euismod justo sit amet magna posuere, id luctus erat.
+                Phasellus non quam a ligula iaculis tempus. Etiam euismod justo sit amet magna posuere, id luctus erat.
+                Phasellus non quam a ligula iaculis tempus. Etiam euismod justo sit amet magna posuere, id luctus erat.
+                Phasellus non quam a ligula iaculis tempus. Etiam euismod justo sit amet magna posuere, id luctus erat.
+                Phasellus non quam a ligula iaculis tempus. Etiam euismod justo sit amet magna posuere, id luctus erat.
+            </p>
+            <p>
+                Vestibulum vitae velit vitae metus efficitur luctus. Sed vitae justo nec eros tempor hendrerit.
+                Phasellus non quam a ligula iaculis tempus. Etiam euismod justo sit amet magna posuere, id luctus erat.
+                Phasellus non quam a ligula iaculis tempus. Etiam euismod justo sit amet magna posuere, id luctus erat.
+                Phasellus non quam a ligula iaculis tempus. Etiam euismod justo sit amet magna posuere, id luctus erat.
+                Phasellus non quam a ligula iaculis tempus. Etiam euismod justo sit amet magna posuere, id luctus erat.
+                Phasellus non quam a ligula iaculis tempus. Etiam euismod justo sit amet magna posuere, id luctus erat.
+                Phasellus non quam a ligula iaculis tempus. Etiam euismod justo sit amet magna posuere, id luctus erat.
+                Phasellus non quam a ligula iaculis tempus. Etiam euismod justo sit amet magna posuere, id luctus erat.
+                Phasellus non quam a ligula iaculis tempus. Etiam euismod justo sit amet magna posuere, id luctus erat.
+                Phasellus non quam a ligula iaculis tempus. Etiam euismod justo sit amet magna posuere, id luctus erat.
+                Phasellus non quam a ligula iaculis tempus. Etiam euismod justo sit amet magna posuere, id luctus erat.
+                Phasellus non quam a ligula iaculis tempus. Etiam euismod justo sit amet magna posuere, id luctus erat.
+                Phasellus non quam a ligula iaculis tempus. Etiam euismod justo sit amet magna posuere, id luctus erat.
+                Phasellus non quam a ligula iaculis tempus. Etiam euismod justo sit amet magna posuere, id luctus erat.
+                Phasellus non quam a ligula iaculis tempus. Etiam euismod justo sit amet magna posuere, id luctus erat.
+            </p>
+            <p>
+                Vestibulum vitae velit vitae metus efficitur luctus. Sed vitae justo nec eros tempor hendrerit.
+                Phasellus non quam a ligula iaculis tempus. Etiam euismod justo sit amet magna posuere, id luctus erat.
+                Phasellus non quam a ligula iaculis tempus. Etiam euismod justo sit amet magna posuere, id luctus erat.
+                Phasellus non quam a ligula iaculis tempus. Etiam euismod justo sit amet magna posuere, id luctus erat.
+                Phasellus non quam a ligula iaculis tempus. Etiam euismod justo sit amet magna posuere, id luctus erat.
+                Phasellus non quam a ligula iaculis tempus. Etiam euismod justo sit amet magna posuere, id luctus erat.
+                Phasellus non quam a ligula iaculis tempus. Etiam euismod justo sit amet magna posuere, id luctus erat.
+                Phasellus non quam a ligula iaculis tempus. Etiam euismod justo sit amet magna posuere, id luctus erat.
+                Phasellus non quam a ligula iaculis tempus. Etiam euismod justo sit amet magna posuere, id luctus erat.
+                Phasellus non quam a ligula iaculis tempus. Etiam euismod justo sit amet magna posuere, id luctus erat.
+                Phasellus non quam a ligula iaculis tempus. Etiam euismod justo sit amet magna posuere, id luctus erat.
+                Phasellus non quam a ligula iaculis tempus. Etiam euismod justo sit amet magna posuere, id luctus erat.
+                Phasellus non quam a ligula iaculis tempus. Etiam euismod justo sit amet magna posuere, id luctus erat.
+                Phasellus non quam a ligula iaculis tempus. Etiam euismod justo sit amet magna posuere, id luctus erat.
+                Phasellus non quam a ligula iaculis tempus. Etiam euismod justo sit amet magna posuere, id luctus erat.
+            </p>
+            <p>Paragraph 2: Vivamus scelerisque urna non ligula suscipit, at faucibus elit varius.</p>
+            <p>Paragraph 3: Aenean convallis, ligula vitae accumsan posuere, ipsum eros congue quam, at fermentum velit lorem non ante.</p>
+            <p>Paragraph 4: Donec ullamcorper sapien nec arcu suscipit, eget faucibus eros scelerisque.</p>
+            <p>Paragraph 5: Integer convallis est sed orci mollis, at fermentum eros volutpat.</p>
+        </div>
+
+        <!-- Sticky heading 2 -->
+        <h1 class="sticky-heading" id="stickyHeading2">Sticky Heading 2</h1>
+
+        <div class="text-content">
+            <p>Paragraph 6: Ut ullamcorper, felis ut malesuada gravida, lorem eros ullamcorper urna, at tincidunt est sem sed enim.</p>
+            <p>Paragraph 7: Morbi vehicula arcu quis ipsum sagittis scelerisque.</p>
+            <p>
+                Vestibulum vitae velit vitae metus efficitur luctus. Sed vitae justo nec eros tempor hendrerit.
+                Phasellus non quam a ligula iaculis tempus. Etiam euismod justo sit amet magna posuere, id luctus erat.
+                Phasellus non quam a ligula iaculis tempus. Etiam euismod justo sit amet magna posuere, id luctus erat.
+                Phasellus non quam a ligula iaculis tempus. Etiam euismod justo sit amet magna posuere, id luctus erat.
+                Phasellus non quam a ligula iaculis tempus. Etiam euismod justo sit amet magna posuere, id luctus erat.
+                Phasellus non quam a ligula iaculis tempus. Etiam euismod justo sit amet magna posuere, id luctus erat.
+                Phasellus non quam a ligula iaculis tempus. Etiam euismod justo sit amet magna posuere, id luctus erat.
+                Phasellus non quam a ligula iaculis tempus. Etiam euismod justo sit amet magna posuere, id luctus erat.
+                Phasellus non quam a ligula iaculis tempus. Etiam euismod justo sit amet magna posuere, id luctus erat.
+                Phasellus non quam a ligula iaculis tempus. Etiam euismod justo sit amet magna posuere, id luctus erat.
+                Phasellus non quam a ligula iaculis tempus. Etiam euismod justo sit amet magna posuere, id luctus erat.
+                Phasellus non quam a ligula iaculis tempus. Etiam euismod justo sit amet magna posuere, id luctus erat.
+                Phasellus non quam a ligula iaculis tempus. Etiam euismod justo sit amet magna posuere, id luctus erat.
+                Phasellus non quam a ligula iaculis tempus. Etiam euismod justo sit amet magna posuere, id luctus erat.
+                Phasellus non quam a ligula iaculis tempus. Etiam euismod justo sit amet magna posuere, id luctus erat.
+            </p>
+            <p>
+                Vestibulum vitae velit vitae metus efficitur luctus. Sed vitae justo nec eros tempor hendrerit.
+                Phasellus non quam a ligula iaculis tempus. Etiam euismod justo sit amet magna posuere, id luctus erat.
+                Phasellus non quam a ligula iaculis tempus. Etiam euismod justo sit amet magna posuere, id luctus erat.
+                Phasellus non quam a ligula iaculis tempus. Etiam euismod justo sit amet magna posuere, id luctus erat.
+                Phasellus non quam a ligula iaculis tempus. Etiam euismod justo sit amet magna posuere, id luctus erat.
+                Phasellus non quam a ligula iaculis tempus. Etiam euismod justo sit amet magna posuere, id luctus erat.
+                Phasellus non quam a ligula iaculis tempus. Etiam euismod justo sit amet magna posuere, id luctus erat.
+                Phasellus non quam a ligula iaculis tempus. Etiam euismod justo sit amet magna posuere, id luctus erat.
+                Phasellus non quam a ligula iaculis tempus. Etiam euismod justo sit amet magna posuere, id luctus erat.
+                Phasellus non quam a ligula iaculis tempus. Etiam euismod justo sit amet magna posuere, id luctus erat.
+                Phasellus non quam a ligula iaculis tempus. Etiam euismod justo sit amet magna posuere, id luctus erat.
+                Phasellus non quam a ligula iaculis tempus. Etiam euismod justo sit amet magna posuere, id luctus erat.
+                Phasellus non quam a ligula iaculis tempus. Etiam euismod justo sit amet magna posuere, id luctus erat.
+                Phasellus non quam a ligula iaculis tempus. Etiam euismod justo sit amet magna posuere, id luctus erat.
+                Phasellus non quam a ligula iaculis tempus. Etiam euismod justo sit amet magna posuere, id luctus erat.
+            </p>
+            <p>
+                Vestibulum vitae velit vitae metus efficitur luctus. Sed vitae justo nec eros tempor hendrerit.
+                Phasellus non quam a ligula iaculis tempus. Etiam euismod justo sit amet magna posuere, id luctus erat.
+                Phasellus non quam a ligula iaculis tempus. Etiam euismod justo sit amet magna posuere, id luctus erat.
+                Phasellus non quam a ligula iaculis tempus. Etiam euismod justo sit amet magna posuere, id luctus erat.
+                Phasellus non quam a ligula iaculis tempus. Etiam euismod justo sit amet magna posuere, id luctus erat.
+                Phasellus non quam a ligula iaculis tempus. Etiam euismod justo sit amet magna posuere, id luctus erat.
+                Phasellus non quam a ligula iaculis tempus. Etiam euismod justo sit amet magna posuere, id luctus erat.
+                Phasellus non quam a ligula iaculis tempus. Etiam euismod justo sit amet magna posuere, id luctus erat.
+                Phasellus non quam a ligula iaculis tempus. Etiam euismod justo sit amet magna posuere, id luctus erat.
+                Phasellus non quam a ligula iaculis tempus. Etiam euismod justo sit amet magna posuere, id luctus erat.
+                Phasellus non quam a ligula iaculis tempus. Etiam euismod justo sit amet magna posuere, id luctus erat.
+                Phasellus non quam a ligula iaculis tempus. Etiam euismod justo sit amet magna posuere, id luctus erat.
+                Phasellus non quam a ligula iaculis tempus. Etiam euismod justo sit amet magna posuere, id luctus erat.
+                Phasellus non quam a ligula iaculis tempus. Etiam euismod justo sit amet magna posuere, id luctus erat.
+                Phasellus non quam a ligula iaculis tempus. Etiam euismod justo sit amet magna posuere, id luctus erat.
+            </p>
+            <p>
+                Vestibulum vitae velit vitae metus efficitur luctus. Sed vitae justo nec eros tempor hendrerit.
+                Phasellus non quam a ligula iaculis tempus. Etiam euismod justo sit amet magna posuere, id luctus erat.
+                Phasellus non quam a ligula iaculis tempus. Etiam euismod justo sit amet magna posuere, id luctus erat.
+                Phasellus non quam a ligula iaculis tempus. Etiam euismod justo sit amet magna posuere, id luctus erat.
+                Phasellus non quam a ligula iaculis tempus. Etiam euismod justo sit amet magna posuere, id luctus erat.
+                Phasellus non quam a ligula iaculis tempus. Etiam euismod justo sit amet magna posuere, id luctus erat.
+                Phasellus non quam a ligula iaculis tempus. Etiam euismod justo sit amet magna posuere, id luctus erat.
+                Phasellus non quam a ligula iaculis tempus. Etiam euismod justo sit amet magna posuere, id luctus erat.
+                Phasellus non quam a ligula iaculis tempus. Etiam euismod justo sit amet magna posuere, id luctus erat.
+                Phasellus non quam a ligula iaculis tempus. Etiam euismod justo sit amet magna posuere, id luctus erat.
+                Phasellus non quam a ligula iaculis tempus. Etiam euismod justo sit amet magna posuere, id luctus erat.
+                Phasellus non quam a ligula iaculis tempus. Etiam euismod justo sit amet magna posuere, id luctus erat.
+                Phasellus non quam a ligula iaculis tempus. Etiam euismod justo sit amet magna posuere, id luctus erat.
+                Phasellus non quam a ligula iaculis tempus. Etiam euismod justo sit amet magna posuere, id luctus erat.
+                Phasellus non quam a ligula iaculis tempus. Etiam euismod justo sit amet magna posuere, id luctus erat.
+            </p>
+            <p>Paragraph 8: Cras scelerisque tincidunt leo a varius.</p>
+            <p>Paragraph 9: Nulla vitae turpis ac nunc porta gravida non eu purus.</p>
+            <p>Paragraph 10: Curabitur vestibulum erat id nunc viverra, nec eleifend lorem sagittis.</p>
+        </div>
+
+        <!-- Add more headings and content as necessary -->
+    </div>
+
+    <script>
+        const scrollableDiv = document.getElementById('scrollableDiv');
+        const imageContainer = document.getElementById('imageContainer');
+        const image = document.getElementById('image');
+        
+        let scrollThreshold;
+
+        // Calculate 10% of the image height
+        function setScrollThreshold() {
+            scrollThreshold = image.offsetHeight * 0.1;
+        }
+
+        // Set the scroll threshold after the image has loaded
+        window.onload = setScrollThreshold;
+        window.onresize = setScrollThreshold; // Recalculate on window resize
+
+        // Hide or show the image based on scroll position
+        function hideProfileImage() {
+            if (scrollableDiv.scrollTop >= scrollThreshold) {
+                imageContainer.classList.add('hidden'); // Hide image
+            } else {
+                imageContainer.classList.remove('hidden'); // Show image
+            }
+        }
+
+        // Attach the scroll event listener
+        scrollableDiv.addEventListener('scroll', hideProfileImage);
+
+        // 
+        const headings = document.querySelectorAll('.sticky-heading');
+        let currentStickyHeading = headings[0]; // Start with the first heading
+
+        function handleStickyHeadings() {
+            const scrollTop = scrollableDiv.scrollTop;
+            let newStickyHeading = null;
+
+            headings.forEach((heading) => {
+                const headingTop = heading.getBoundingClientRect().top + scrollTop;
+                
+                // Determine if the heading should be sticky
+                if (headingTop <= scrollTop) {
+                    newStickyHeading = heading;
+                }
+            });
+
+            if (newStickyHeading && newStickyHeading !== currentStickyHeading) {
+                currentStickyHeading.classList.remove('active');
+                currentStickyHeading = newStickyHeading;
+                currentStickyHeading.classList.add('active');
+            } else if (!newStickyHeading && currentStickyHeading) {
+                currentStickyHeading.classList.remove('active');
+                currentStickyHeading = null;
+            }
+        }
+
+        scrollableDiv.addEventListener('scroll', handleStickyHeadings);
+    </script>
+</body>
+</html>
